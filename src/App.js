@@ -1,19 +1,19 @@
 import './App.css';
+import About from './components/About';
+import Navbar from './components/Navbar';
+// import TextForm from './components/TextForm';
 
-let name="Akshay"
+// let name="Akshay"
 function App() {
   return (
     <>
-    <nav>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Contact Us</li>
-      <div className="container">
-        <h1>let {name}</h1>
-      <p>lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsumlorem Ipsumlorem Ipsumlorem Ipsumlorem Ipsum lorem </p>
+      <Navbar title="Text Utils"/>
+      <div className="container my-2">
+        {/* <TextForm heading= "Enter Text here"/> */}
+        <About/>
+
       </div>
-      
-    </nav>
+
     </>
   );
 }
